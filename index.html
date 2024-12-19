@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferrevial - Todo en pinturas y herramientas para tus proyectos</title>
+    <meta name="description" content="Encuentra las mejores pinturas, herramientas y materiales para tus proyectos. En Ferrevial ofrecemos calidad, asesoría experta y envíos a todo el país.">
+    <meta name="keywords" content="pinturas, herramientas, ferretería, proyectos, materiales, asesoría, construcción, decoración">
+    <meta name="author" content="Ferrevial">
+    <meta name="robots" content="index, follow">
+    <meta name="geo.region" content="CO"> <!-- Código del país (por ejemplo, Colombia) -->
+    <meta name="geo.placename" content="Colombia">
+    <meta name="geo.position" content="5.33064734145096, -72.40297475330749"> <!-- Coordenadas geográficas -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilosWhats.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="assets/img/logoWhats.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+</head>
+
+<body>
+    <header class="relative">
+        <div class="sticky top-0 border-b-2 contenedor-navegacion cont-bar-menu">
+            <div class="bar-info bg-alternative p-4 ">
+                <div class="contenedor flex items-center">
+                    <div class="info flex items-center">
+                        <img src="assets/img/whatsapp.png" alt="whatsapp">
+                        <p>318 748 8556</p>
+                    </div>
+                    <div class="ml-4 info flex items-center">
+                        <img src="assets/img/phone.png" alt="phone">
+                        <p>318 748 8556</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bar-menu p-4">
+                <div class="contenedor flex items-center justify-between">
+                    <img src="assets/img/logo.png" alt="ferrevial">
+                    <nav class="flex items-center gap-10">
+                        <a href="">Inicio</a>
+                        <a href="">Nosotros</a>
+                        <a href="">Nuestros productos</a>
+                        <a href="">FAQ</a>
+                        <a href="">Contacto</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="contenedor">
+            <div class="txt-header">
+                <h1>Todo lo que necesitas para tus proyectos, en un solo lugar.</h1>
+                <p class="mb-10 mt-4">Encuentra pinturas, herramientas, accesorios y más en Ferrevial.</p>
+                <a href="#productos" class="px-4 py-2 bg-primary mt-4 rounded-md hover:opacity-90 ">Ver Productos</a>
+            </div>
+        </div>
+    </header>
+    <section class="section-hero">
+        <div class="contenedor">
+            <div class="titulo">
+                <h2>Sobre Nosotros</h2>
+                <p>Trabajamos con pasión y ponemos todo nuestro empeño en ofrecer a nuestros clientes materiales de la mejor calidad, acompañados de un asesoramiento cercano y personalizado para que puedan hacer realidad sus proyectos con éxito. Nos honra y enorgullece ser su proveedor y aliado de confianza.</p>
+            </div>
+        </div>
+    </section>
+    <section class="section-productos" id="productos">
+        <div class="contenedor cont-productos">
+            <!-- <div class="flot_2"></div> -->
+            <div class="titulo">
+                <h2>Nuestro Catálogo</h2>
+                <p>Ofrecemos pinturas de alta calidad y herramientas esenciales para interiores, exteriores y más. Todo lo que necesitas para transformar tus espacios con durabilidad y estilo.</p>
+            </div>
+            <div class="grid grid-cols-4 gap-10 items-center my-10">
+                <div class="card">
+                    <img src="assets/img/productos/prod1.png" alt="Pinturas, Revestimientos e Impermeabilizantes">
+                    <p>Pinturas, Revestimientos e Impermeabilizantes</p>
+                </div>
+                <div class="card">
+                    <img src="assets/img/productos/prod2.png" alt="Protección Personal (EPP)">
+                    <p>Protección Personal (EPP)</p>
+                </div>
+                <div class="card">
+                    <img src="assets/img/productos/prod3.png" alt="Seguridad Vial">
+                    <p>Seguridad Vial</p>
+                </div>
+                <div class="card">
+                    <img src="assets/img/productos/prod4.png" alt="Herramientas de Trabajo y Accesorios">
+                    <p>Herramientas de Trabajo y Accesorios</p>
+                </div>
+            </div>
+            <div class="flex items-center justify-center">
+                <a href="/assets/docs/catalogo.pdf" class="px-4 py-4 bg-primary font-bold hover:opacity-90 rounded-md">Descarga Nuestro Catálogo</a>
+            </div>
+            <img src="assets/img/img_flot_1.png" alt="img_flot_1" class="img_flot_1">
+        </div>
+    </section>
+    <section class="bg-primary contenedor-objetivos">
+        <div class="contenedor">
+            <div class="grid grid-cols-3 items-center my-10">
+                <div class="card text-center flex flex-col items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 0 1 3 3h-15a3 3 0 0 1 3-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 0 1-.982-3.172M9.497 14.25a7.454 7.454 0 0 0 .981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 0 0 7.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 0 0 2.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 0 1 2.916.52 6.003 6.003 0 0 1-5.395 4.972m0 0a6.726 6.726 0 0 1-2.749 1.35m0 0a6.772 6.772 0 0 1-3.044 0" />
+                    </svg>
+                    <h5 class="text-white font-bold mt-4">Garantía de Satisfacción</h5>
+                    <p class="text-secondary">Si no estás completamente satisfecho, trabajaremos contigo para garantizar una solución adecuada.</p>
+                </div>
+                <div class="card text-center flex flex-col items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" />
+                    </svg>
+                    <h5 class="text-white font-bold mt-4">Precios Competitivos</h5>
+                    <p class="text-secondary">Ofrecemos los mejores precios en pinturas, herramientas y materiales para que tu proyecto sea un éxito sin romper tu bolsillo.</p>
+                </div>
+                <div class="card text-center flex flex-col items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+                    </svg>                      
+                    <h5 class="text-white font-bold mt-4">Envíos a todo el país</h5>
+                    <p class="text-secondary">Realiza tu pedido desde la comodidad de tu hogar y recibe nuestros productos en el menor tiempo posible.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contenedor py-10">
+        <div class="grid grid-cols-1 gap-10 md:grid-cols-2">
+            <div id="accordion-collapse" data-accordion="collapse">
+                <p id="accordion-collapse-heading-1">
+                    <button type="button"
+                        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 gap-3"
+                        data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
+                        aria-controls="accordion-collapse-body-1"
+                    >
+                        <span>¿Cual es el horario de atención?</span>
+                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 5 5 1 1 5" />
+                        </svg>
+                    </button>
+                </p>
+                <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+                    <div class="p-5 border border-b-0 border-gray-200">
+                        <p>Atendemos de lunes a viernes de 8:00 am a 05:00 pm y los sábado de 8:00 am a 02:00 pm (jornada continua). ¡Te esperamos!</p>
+                    </div>
+                </div>
+                <p id="accordion-collapse-heading-2">
+                    <button type="button"
+                        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 gap-3"
+                        data-accordion-target="#accordion-collapse-body-2" aria-expanded="false"
+                        aria-controls="accordion-collapse-body-2">
+                        <span>¿Ofrecen asesoría para proyectos de señalización?</span>
+                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 5 5 1 1 5" />
+                        </svg>
+                    </button>
+                </p>
+                <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+                    <div class="p-5 border border-b-0 border-gray-200">
+                        <p>¡Claro que sí! Nuestro equipo está preparado para brindarte asesoría personalizada en proyectos de señalización, desde la selección de materiales hasta recomendaciones técnicas. Contáctanos y estaremos encantados de ayudarte.</p>
+                    </div>
+                </div>
+                <p id="accordion-collapse-heading-3">
+                    <button type="button"
+                        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 gap-3"
+                        data-accordion-target="#accordion-collapse-body-3" aria-expanded="false"
+                        aria-controls="accordion-collapse-body-3">
+                        <span>¿Tienen envío a todo el país?</span>
+                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 5 5 1 1 5" />
+                        </svg>
+                    </button>
+                </p>
+                <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+                    <div class="p-5 border border-t-0 border-gray-200">
+                        <p>¡Sí, realizamos envíos a todo el país! Contamos con opciones de entrega rápidas y seguras para que recibas tus productos en la puerta de tu hogar o proyecto. Consulta nuestras tarifas y tiempos de entrega según tu ubicación.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="map h-ull" id="map"></div>
+        </div>
+    </section>
+    <section class="hero bg-secondary mt-8" id="home">
+        <div class="contenedor">
+            <div class="py-8 text-black flex items-center justify-between">
+                    <p class="m-0">Estamos aquí para ayudarte, encuentra lo que necesitas y recibe asesoría experta.</p>
+                <a href="https://api.whatsapp.com/send?phone=573204529136&text=Hola!%20te%20contacto%20desde%20el%20sitio%20web" target="_blank" class="p-4 text-white bg-primary rounded-md hover:opacity-90 ">Contactanos</a>
+            </div>
+        </div>
+    </section>
+    <footer class="pt-10">
+        <div class="contenedor grid grid-cols-1 md:grid-cols-4">
+            <div class="txt-footer col-span-2 flex items-center gap-4">
+                <img src="assets/img/logo.png" alt="ferrevial" class="w-16 md:w-44">
+                <div>
+                    <p class="font-bold mb-10"><span class="font-bold">Tu aliado de confianza para construir, reparar y crear.</span></p>
+                    <p class="text-justify">Explora nuestro catálogo lleno de herramientas, materiales y soluciones diseñadas para hacer tus proyectos más fáciles y exitosos. <span class="font-bold">¡Todo lo que necesitas está aquí, a tu alcance!</span> </p>
+                </div>
+            </div>
+            <nav class="flex flex-col gap-4 text-center">
+                <a href="">Inicio</a>
+                <a href="">Nosotros</a>
+                <a href="">Nuestros productos</a>
+                <a href="">FAQ</a>
+                <a href="">Contacto</a>
+            </nav>
+            <div class="info-footer">
+                <div class="mt-4 flex items-center gap-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                    </svg>
+                    <a href="mailto:productos@ferrevial.com" target="_blank">Productos@ferrevial.com</a>
+                </div>
+                <div class="mt-4 flex items-center gap-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                    </svg>
+                    <a href="https://api.whatsapp.com/send?phone=573204529136&text=Hola!%20te%20contacto%20desde%20el%20sitio%20web" target="_blank">+57 313 8423819</a>
+                </div>
+                <div class="mt-4 flex items-center gap-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                    </svg>
+                    <a href="https://maps.app.goo.gl/BE8UeeTnsmyohXq87" target="_blank">Calle 26 # 10-05, Yopal, Casanare</a>
+                </div>
+            </div>
+        </div>
+        <div class="bar-dev mt-10 p-4 bg-alternative">
+            <div class="contenedor text-center">
+                <p>© 2024 Ferrevial. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- flechita -->
+    <!-- clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%); -->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+        // popupWhatsApp = () => {
+        //     let btnClosePopup = document.querySelector('.closePopup');
+        //     let btnOpenPopup = document.querySelector('.whatsapp-button');
+        //     let popup = document.querySelector('.popup-whatsapp');
+        //     let sendBtn = document.getElementById('send-btn');
+
+        //     btnClosePopup.addEventListener("click", () => {
+        //         popup.classList.toggle('is-active-whatsapp-popup')
+        //     })
+
+        //     btnOpenPopup.addEventListener("click", () => {
+        //         popup.classList.toggle('is-active-whatsapp-popup')
+        //         popup.style.animation = "fadeIn .6s 0.0s both";
+        //     })
+
+        //     sendBtn.addEventListener("click", () => {
+        //         let msg = document.getElementById('whats-in').value;
+        //         let relmsg = msg.replace(/ /g, "%20");
+        //         window.open('https://api.whatsapp.com/send/?phone=573187488556&text=' + relmsg + '&type=phone_number&app_absent=0', '_blank');
+        //     });
+
+        //     setTimeout(() => {
+        //         popup.classList.toggle('is-active-whatsapp-popup');
+        //     }, 3000);
+        // }
+        // popupWhatsApp();
+        
+        var map = L.map('map').setView([5.33064734145096, -72.40297475330749],17);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
+
+        var customIcon = L.icon({
+            iconUrl: 'assets/img/logo_map.png', // La ruta de tu imagen personalizada
+            iconSize: [60, 60], // Tamaño del ícono
+        });
+
+        L.marker([5.33064734145096, -72.40297475330749], {icon: customIcon}).addTo(map)
+        .bindPopup('Ferrevial')
+        .openPopup()
+        .openTooltip()
+    });
+</script>
+
+</html>
